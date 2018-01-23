@@ -6,6 +6,7 @@
  * @param {Object} options.data 组件的动态数据
  * @param {Object} options.methods 组件的事件函数
  */
+
 class Component {
     constructor(options = {}) {
         Object.assign(this, {
