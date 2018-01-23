@@ -3,18 +3,22 @@
  */
 import Component from '../Component'
 
+
+
 export default {
   /**
    * 初始化
+   * 1.id 为组件的唯一标识
+   * 2.opts为外界对组件的配置
    */
-  init() {
-    const options = {
+  init(id, opts={} ) {
+    const options = Object.assign({
       animateCss: undefined,
-    }
+    }, opts)
 
     // 实例化组件
     const component = new Component({
-      scope: `$BF.SlideLineNav`,
+      scope: `$BF.SlideLineNav.${id}`,
       data: options,
       methods: {
         /**
