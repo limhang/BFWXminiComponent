@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/toast/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/slideLineNav/index"
