@@ -35,7 +35,7 @@ Page({
       type: 'text',
       timer: 1500,
       color: '#fff',
-      text: '文本提示',
+      text: '文本提发的发送东方闪电示',
       success: () => console.log('文本提示')
     })
   },

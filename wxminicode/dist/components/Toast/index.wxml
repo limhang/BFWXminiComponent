@@ -2,7 +2,7 @@
     <view class="bf-toast {{ animateCss }} {{ className }}" hidden="{{ !visible }}">
         <view class="bf-toast-container">
             <icon wx:if="{{ type }}" type="{{ type }}" size="55" color="{{ color }}" class="bf-toast-container-icon" />
-            <view class="wux-toast-container-text">{{ text }}</view>
+            <view class="{{ className == 'bf-toast-text' ? 'bf-toast-container-text' : 'bf-toast-container-icon-text'}}">{{ text }}</view>
         </view>
     </view>
 </template>
