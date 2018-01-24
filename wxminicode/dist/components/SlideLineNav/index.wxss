@@ -1,2 +1,7 @@
-.class {
-  background-color: red; }
+.bf-slide-line-nav {
+  position: relative;
+  display: flex; }
+  .bf-slide-line-nav-item {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center; }

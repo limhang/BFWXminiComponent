@@ -1,3 +1,12 @@
-.class {
-  background-color: red;
+$bf-slide-line-nav : '.bf-slide-line-nav';
+
+#{$bf-slide-line-nav} {
+  position: relative;
+  display: flex;
+
+  &-item {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+  }
 }

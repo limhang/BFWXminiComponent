@@ -1,4 +1,12 @@
 /**index.wxss**/
+.bf-slide-line-nav {
+  position: relative;
+  display: flex; }
+  .bf-slide-line-nav-item {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center; }
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -15,3 +23,9 @@
 
 .usermotto {
   margin-top: 200px; }
+
+.bf-slide-line-nav-item__selected {
+  border-bottom: 1rpx solid #c7c7c7; }
+
+.bf-slide-line-nav-item__normal {
+  border-bottom: 1rpx solid green; }

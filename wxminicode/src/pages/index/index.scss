@@ -1,4 +1,8 @@
 /**index.wxss**/
+
+@import "../../components/SlideLineNav/index.scss";
+$bf-slide-line-nav-item__normal: '.bf-slide-line-nav-item__normal';
+$bf-slide-line-nav-item__selected: '.bf-slide-line-nav-item__selected';
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +22,12 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+#{$bf-slide-line-nav-item__selected} {
+  border-bottom: 1rpx solid #c7c7c7;
+}
+
+#{$bf-slide-line-nav-item__normal} {
+  border-bottom: 1rpx solid green;
 }

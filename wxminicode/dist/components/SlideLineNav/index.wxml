@@ -1,3 +1,9 @@
+<!--suppress GjsLint -->
 <template name="SlideLineNav">
-    
-</template>
+    <view class="bf-slide-line-nav" style="{{id}}">
+        <block  wx:for="{{dataSource}}" wx:key="{{index}}">
+            <view class="bf-slide-line-nav-item {{selected == index ? itemClassNameNormal : 'bf-slide-line-nav-item__normal'}}"
+                  style="{{id}}" bindtap="{{selectedItem}}">{{dataSource[index]}} {{widthInfo}}</view>
+        </block>
+    </view>
+</template>s

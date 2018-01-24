@@ -3,10 +3,8 @@
  */
 import Component from '../Component'
 
-
-
 export default {
-  /**
+  /**af
    * 初始化
    * 1.id 为组件的唯一标识
    * 2.opts为外界对组件的配置
@@ -14,39 +12,24 @@ export default {
   init(id, opts={} ) {
     const options = Object.assign({
       animateCss: undefined,
-    }, opts)
+      // 默认选中的item
+      itemClassNameNormal: `bf-slide-line-nav-item-${id}__selected`,
+      widthInfo: 50,
+      selected: 0,
+      id: id,
+    }, opts);
 
     // 实例化组件
     const component = new Component({
       scope: `$BF.SlideLineNav.${id}`,
       data: options,
       methods: {
-        /**
-         * 保持锁定
-         */
-        retain() {
-          if (typeof this.backdropHolds !== `number` || !this.backdropHolds) {
-            this.backdropHolds = 0
-          }
-
-          this.backdropHolds++
-
-          if (this.backdropHolds === 1) {
-            this.setVisible()
-          }
-        },
-        /**
-         * 释放锁定
-         */
-        release() {
-          if (this.backdropHolds === 1) {
-            this.setHidden()
-          }
-          this.backdropHolds = Math.max(0, this.backdropHolds - 1)
-        },
+        selectedItem(e) {
+          console.log(e);
+        }
       },
     })
 
-    return component
+    return component;
   },
 }
