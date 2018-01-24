@@ -17,9 +17,14 @@ exports.default = {
     var options = Object.assign({
       animateCss: undefined,
 
-      itemClassNameNormal: 'bf-slide-line-nav-item-' + id + '__selected',
-      widthInfo: 50,
+      classNameNormal: 'bf-slide-line-nav-' + id + '__normal',
+
+      itemClassNameSelected: 'bf-slide-line-nav-item-' + id + '__selected',
+
+      itemClassNameNormal: 'bf-slide-line-nav-item-' + id + '__normal',
+
       selected: 0,
+
       id: id
     }, opts);
 
@@ -28,7 +33,9 @@ exports.default = {
       data: options,
       methods: {
         selectedItem: function selectedItem(e) {
-          console.log(e);
+          var index = e.currentTarget.dataset.info;
+
+          options.selectedItem(index);
         }
       }
     });

@@ -3,10 +3,11 @@ $bf-slide-line-nav : '.bf-slide-line-nav';
 #{$bf-slide-line-nav} {
   position: relative;
   display: flex;
+  height: 80rpx;
 
   &-item {
     flex: 1;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
   }
 }

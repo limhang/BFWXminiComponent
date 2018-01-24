@@ -1,31 +1,26 @@
 /**index.wxss**/
 .bf-slide-line-nav {
   position: relative;
-  display: flex; }
+  display: flex;
+  height: 80rpx; }
   .bf-slide-line-nav-item {
     flex: 1;
     box-sizing: border-box;
-    text-align: center; }
+    text-align: left; }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+.nav {
+  position: relative;
+  top: 100rpx; }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%; }
+.bf-slide-line-nav-indexNav__normal {
+  height: 160rpx; }
 
-.userinfo-nickname {
-  color: #aaa; }
+.bf-slide-line-nav-item-indexNav__normal {
+  text-align: center;
+  line-height: 160rpx;
+  height: 160rpx;
+  width: calc(100vw /3); }
 
-.usermotto {
-  margin-top: 200px; }
-
-.bf-slide-line-nav-item__selected {
-  border-bottom: 1rpx solid #c7c7c7; }
-
-.bf-slide-line-nav-item__normal {
-  border-bottom: 1rpx solid green; }
+.bf-slide-line-nav-item-indexNav__selected {
+  border-bottom: 2rpx solid green;
+  color: green; }
