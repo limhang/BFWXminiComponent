@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/toast/index",
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/toast/index",
     "pages/slideLineNav/index"
   ],
   "window": {

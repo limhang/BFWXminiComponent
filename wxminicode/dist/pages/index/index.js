@@ -1,32 +1,19 @@
 'use strict';
 
-var _index = require('../../components/SlideLineNav/index.js');
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+var util = require('../../utils/util.js');
 Page({
   data: {
-    $BF: { SlideLineNav: { indexNav: { dataSource: ['x', 'y'] } } }
+    dataSource: ['toast', 'slideLineNav']
   },
+  onLoad: function onLoad() {},
 
-  bindViewTap: function bindViewTap() {
+  selectedItem: function selectedItem(e) {
+    var index = e.target.dataset.info;
+    this.push2Nav(this.data.dataSource[index]);
+  },
+  push2Nav: function push2Nav(path) {
     wx.navigateTo({
-      url: '../logs/logs'
-    });
-  },
-  onLoad: function onLoad() {
-    var that = this;
-
-    _index2.default.init('indexNav', {
-      dataSource: ['item1', 'item2', 'item3'],
-      selectedItem: function selectedItem(index) {
-        that.setData(_defineProperty({}, '$BF.SlideLineNav.indexNav.selected', index));
-        console.log(index);
-      }
+      url: '../' + path + '/index'
     });
   }
 });

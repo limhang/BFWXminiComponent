@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<import src="../../components/SlideLineNav/index.wxml"/>
+
+<view class="nav">
+  <template is="SlideLineNav" data="{{ ...$BF.SlideLineNav.indexNav }}"/>
+</view>
+

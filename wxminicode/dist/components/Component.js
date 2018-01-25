@@ -132,7 +132,7 @@ var Component = function () {
         value: function setVisible() {
             var _setData2;
 
-            var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'wux-animate--fade-in';
+            var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'bf-animate--fade-in';
 
             this.setData((_setData2 = {}, _defineProperty(_setData2, this.options.scope + '.animateCss', className), _defineProperty(_setData2, this.options.scope + '.visible', !0), _setData2));
         }
@@ -141,7 +141,7 @@ var Component = function () {
         value: function setHidden() {
             var _this = this;
 
-            var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'wux-animate--fade-out';
+            var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'bf-animate--fade-out';
             var timer = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 300;
 
             this.setData(_defineProperty({}, this.options.scope + '.animateCss', className));

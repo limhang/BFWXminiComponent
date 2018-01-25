@@ -1,7 +1,5 @@
-<!--index.wxml-->
-<import src="../../components/SlideLineNav/index.wxml"/>
-
-<view class="nav">
-  <template is="SlideLineNav" data="{{ ...$BF.SlideLineNav.indexNav }}"/>
+<view class="container">
+  <block wx:for="{{dataSource}}" wx:key="{{index}}">
+    <view class="container-item cellSeparatorForward" bindtap="selectedItem" data-info="{{index}}">{{dataSource[index]}}</view>
+  </block>
 </view>
-

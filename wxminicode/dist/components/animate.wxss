@@ -1,4 +1,3 @@
-/**app.wxss**/
 @keyframes slideInDown {
   0% {
     transform: translate3d(0, -100%, 0);
@@ -138,14 +137,3 @@
 
 .bf-animate--fade-out-up {
   animation: fadeOutUp ease .3s forwards; }
-
-.cellSeparatorBackward::after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 2rpx solid #efeff4; }
-
-.cellSeparatorForward {
-  border-bottom: 2rpx solid #efeff4; }

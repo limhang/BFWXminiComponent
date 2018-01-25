@@ -1,0 +1,26 @@
+/**index.wxss**/
+.bf-slide-line-nav {
+  position: relative;
+  display: flex;
+  height: 80rpx; }
+  .bf-slide-line-nav-item {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: left; }
+
+.nav {
+  position: relative;
+  top: 100rpx; }
+
+.bf-slide-line-nav-indexNav__normal {
+  height: 160rpx; }
+
+.bf-slide-line-nav-item-indexNav__normal {
+  text-align: center;
+  line-height: 160rpx;
+  height: 160rpx;
+  width: calc(100vw /3); }
+
+.bf-slide-line-nav-item-indexNav__selected {
+  border-bottom: 2rpx solid green;
+  color: green; }

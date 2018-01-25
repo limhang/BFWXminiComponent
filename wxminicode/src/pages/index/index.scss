@@ -1,29 +1,18 @@
-/**index.wxss**/
-@import "../../components/SlideLineNav/index.scss";
-$bf-slide-line-nav-indexNav__normal: '.bf-slide-line-nav-indexNav__normal';
-$bf-slide-line-nav-item-indexNav__normal: '.bf-slide-line-nav-item-indexNav__normal';
-$bf-slide-line-nav-item-indexNav__selected: '.bf-slide-line-nav-item-indexNav__selected';
+$container: '.container';
 
-.nav {
+#{$container} {
   position: relative;
-  top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  &-item {
+    position: relative;
+    height: 80rpx;
+    width: 100vw;
+    text-align: center;
+    line-height: 80rpx;
+  }
 }
 
-//组件SlideLineNav-indexNav样式
-#{$bf-slide-line-nav-indexNav__normal} {
-  height: 160rpx;
-}
 
-#{$bf-slide-line-nav-item-indexNav__normal} {
-  text-align: center;
-  line-height: 160rpx;
-  height: 160rpx;
-  width: calc(100vw /3);
-}
-
-#{$bf-slide-line-nav-item-indexNav__selected} {
-  border-bottom: 2rpx solid green;
-  color: green;
-}
 
 

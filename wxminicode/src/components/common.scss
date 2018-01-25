@@ -1,0 +1,26 @@
+$cellSeparatorBackward: '.cellSeparatorBackward';
+$cellSeparatorForward: '.cellSeparatorForward';
+
+//cell头部的分割线
+#{$cellSeparatorBackward} {
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    border-bottom: 2rpx solid #efeff4;
+  }
+}
+
+//cell尾部的分割线
+#{$cellSeparatorForward} {
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    border-bottom: 2rpx solid #efeff4;
+  }
+}
