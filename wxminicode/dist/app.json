@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/toast/index",
-    "pages/slideLineNav/index"
+    "pages/slideLineNav/index",
+    "pages/dialog/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
