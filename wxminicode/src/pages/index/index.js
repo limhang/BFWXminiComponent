@@ -1,5 +1,4 @@
-//logs.js
-var util = require('../../utils/util.js')
+var util = require('../../utils/util.js');
 Page({
   data: {
     dataSource: ['toast','slideLineNav'],
