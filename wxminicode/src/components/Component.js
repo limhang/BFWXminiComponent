@@ -141,7 +141,7 @@ class Component {
     /**
      * 设置元素显示
      */
-    setVisible(className = `wux-animate--fade-in`) {
+    setVisible(className = `bf-animate--fade-in`) {
         this.setData({
             [`${this.options.scope}.animateCss`]: className,
             [`${this.options.scope}.visible`]: !0,
@@ -151,7 +151,7 @@ class Component {
     /**
      * 设置元素隐藏
      */
-    setHidden(className = `wux-animate--fade-out`, timer = 300) {
+    setHidden(className = `bf-animate--fade-out`, timer = 300) {
         this.setData({
             [`${this.options.scope}.animateCss`]: className,
         })
